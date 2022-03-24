@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Mart</title>
+    <!-- bootstrap link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+
+<body>
+    <main class="container">
+        <div>
+            <!-- welcome text  -->
+            <h1 class="text-primary text-center pt-4">Welcome to Phone Mart</h1>
+            <!-- search area  -->
+            <div class="input-group mb-3 w-75 mx-auto pt-4">
+                <input id="search-field" type="text" class="form-control" placeholder="Look for your phone"
+                    aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button onclick="searchPhone()" class="btn btn-outline-secondary" type="button"
+                    id="button-search">search</button>
+            </div>
+            <!-- error message  -->
+            <p id="error-message" class="text-center text-danger">Device you are looking for is not found</p>
+            <p id="error-message-second" class="text-center text-danger">Search field empty!!</p>
+        </div>
+        <!-- single phone result  -->
+        <div id="phone-details" class="w-75 mx-auto pb-4">
+        </div>
+        <!-- search result  -->
+        <div id="search-result" class="row row-cols-1 row-cols-md-3 g-4">
+        </div>
+    </main>
+    <!-- script bootstrap link  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <!-- js script link  -->
+    <script src="./js/api.js"></script>
+</body>
+
+</html>
